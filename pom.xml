@@ -11,7 +11,7 @@
     <!-- java 版本管理-->
     <properties>
         <dockerfile.maven.plugin.version>1.4.5</dockerfile.maven.plugin.version>
-        <!--跳过docker镜像 打包-->
+        <!-- 跳过docker镜像 打包-->
         <dockerfile.skip>true</dockerfile.skip>
         <!--跳过测试 打包-->
         <test.skip>true</test.skip>
