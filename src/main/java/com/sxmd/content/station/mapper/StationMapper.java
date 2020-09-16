@@ -7,7 +7,6 @@ import com.sxmd.content.station.entity.StationEntity;
 import com.sxmd.content.station.model.StationListModel;
 import com.sxmd.content.station.model.StationListRequestModel;
 import com.sxmd.content.station.model.StationListResponseModel;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -18,7 +17,6 @@ import java.util.List;
  * @author summit
  * @date Version 1.0
  */
-@Mapper
 public interface StationMapper extends BaseMapper<StationEntity> {
 
     /**

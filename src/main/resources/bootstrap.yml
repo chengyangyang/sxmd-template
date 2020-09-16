@@ -11,7 +11,7 @@ spring:
     name: sxmd-template
   # 环境的选择   dev | prod
   profiles:
-    active: dev
+    active: dev,generate
   cloud:
     nacos:
       # 服务的注册
@@ -24,10 +24,12 @@ spring:
         file-extension: yaml
         prefix: ${spring.application.name}
 
-web:
-  swagger:
-    oauth-token-url: /sxmd-auth/oauth/token
-    security-scheme: ApiKey
+sxmd:
+  web:
+    swagger:
+      oauth-token-url: /sxmd-auth/oauth/token
+      security-scheme: OAuth2
+
 
 ### mybatis  因为引用了plus 所以这里要用 plus 配置
 mybatis-plus:
